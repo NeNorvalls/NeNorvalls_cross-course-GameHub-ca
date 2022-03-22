@@ -1,1 +1,1 @@
-cross course
+cross-course

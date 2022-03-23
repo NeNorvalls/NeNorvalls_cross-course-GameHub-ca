@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Online Buy and resell Game Store by GameHub" />
         <meta name="keyword" content="game store, buy games, gamehub" />
-        <title>GameHub | Home</title>
+        <title>GameHub | Game-Details</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
-    <body class="body">
+    <body id="body">
       <header>
     
         <!-- Weblogo -->
@@ -32,7 +32,7 @@
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="product.html">Product</a>
-          <a href="login.html">Login</a>
+          <a href="login.html ">Login</a>
           <div class="search-container">
             <form class="form">
               <input type="text" placeholder="Search.." name="search">
@@ -44,40 +44,16 @@
         </div>
     
       </header>
-      <main>
-        <div class="home-container">
-          <h1>Welcome to the universe of games!</h1>
-          <div class="btn-container">
-            <p class="check-out">Click here to check out our newest free games!</p>
-            <a href="product.html" class="index-btn">Check it out!</a>
-            
-          </div>
-          <hr>
-          
-          <section id="featured" class="section">
-            <h2>Featured</h2>
-            <div class="results">
+      
+      <div class="outer-border">
+        <div class="details-container">
+          <div class="game-details">
               <div class="loader"></div>
-            </div>
-            <div class="games-container"></div>
-          </section>
-
-         <a href="product.html" class="index-btn">View More...</a>
-          <div class="news-container">
-            <h2 class="news-h2">News</h2>
-            <div class="news-paragraph">
-                <p>
-                  Watch out! For our newest game on the list.
-                  An amazing and thrilling game adventure that suited to your budget. Grab a copy now!
-                  Love to be challenge? Choose the game categories that will sweat you with excitement and full of fun.
-                  Have the time bonding with games in suitable ages. Avail a copy now!
-                </p>
-              </div>
-            
           </div>
         </div>
-      </main>
+      </div>
     
+      
       <!-- Footer -->
       <footer>
         <div class="footer_container">
@@ -91,6 +67,7 @@
         </div>
       </footer>
       <a href="#body" id="topButton" title="Go to Top">Top</a>
-      <script src="/js/script.js" crossorigin="anonymous"></script>
+      <script src="js/details.js" crossorigin="anonymous"></script>
+      <script src="js/components/errorDisplay.js"></script>
     </body>
 </html>

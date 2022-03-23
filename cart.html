@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="This page for login to your existing account" />
-        <meta name="keyword" content="game store, login, buy games, gamehub" />
-        <title>GameHub | Login</title>
+        <meta name="description" content="Page for your ordered list items" />
+        <meta name="keyword" content="game store, buy games, gamehub" />
+        <title>GameHub | Info</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body class="body">
       <header>
         <a href="index.html"><img class="logo" src="images/gamehub-logo_bg.png" alt="Web-logo" /></a>
-         
+       
             <!-- Hamburger Menu -->
             <input type="checkbox" class="checkbox" hidden id="click">
             <div class="animation">
@@ -41,19 +41,26 @@
           </div>
       </header>
       <main>
-        <div class="login-container">
-          <h1 id="login-heading">Login Here</h1>
+        <div class="cart-container">
+          <h1> Cart</h1>
           <form>
-            <input type="email" name="email" placeholder="Email" />
-            <input type="password" name="password" placeholder="Password" />
-            <div class="login-btn-container">
-              <a class="login-btn" href="index.html">Login</a>
+            <label>Item: <input type="text" placeholder="Cyberpunk" name="name"></label>
+            <label>Quantity: <input type="text" placeholder="1" name="data"></label>
+
+            <div class="cart-btn-container">
+              <input class="cart-btn" type="button" value="Save">
+              <input class="cart-btn" type="button" value="Update">
             </div>
-            <div class="login-link">
-              <a class="forgot-link" href="#">Forgot your password?</a>
+            <div class="clear-btn-container">
+              <label><input class="cart-btn" type="button" value="Clear">
+                * Delete all items</label>
             </div>
-            <div class="login-link">
-              <a class="register-link" href="register.html">Create New Account</a>
+
+            <div class="cart-checkout-container">
+              <a class="cart-checkout" href="checkout.html">Continue to checkout</a>
+            </div>
+            <div class="cancel-btn-container">
+              <a class="cancel-btn" href="product.html">Cancel</a>
             </div>
             
           </form>

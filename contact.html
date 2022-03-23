@@ -41,27 +41,35 @@
           </div>
       </header>
       <main>
+  
         <div class="contact-container">
           <h1>Contact</h1>
-          <form method="POST">
+          <form method="POST"action="">
             <div class="form-wrapper">
               <div>
                 <label for="name"><b>Full Name</b></label>
                 <input type="text" id="name" name="name">
+                <div id="error_displayMessage"></div>
+                
                 <label for="email"><b>Email</b></label>
                 <input type="email" id="email" name="Email">
+                <div id="error_displayMessage"></div>
+
                 <div class="signup-container">
                   <label for="email-updates"><b>Sign up for email updates.</b></label>
                   <input type="checkbox" id="email-updates" name="email-updates" />
+                  <div id="error_displayMessage"></div>
                 </div>
                 <p class="message">Your Message:</p>
-                <textarea name="msg">Enter text here...</textarea>    
+                <textarea name="msg">Enter text here...</textarea>   
+                <div id="error_displayMessage"></div>
+                
                 <a class="submit-btn" href="login.html">Submit </a>
               </div>
             </div>
           </form>
         </div>
-    
+
       </main>
       <footer>
         <div class="footer_container">

@@ -277,8 +277,9 @@ p {
 
 .index-btn:hover,
 .product-btn:hover {
-  background: #1d2540;
+  background: #fff700;
   transition: 0.2s;
+  color: #1d2540;
 }
 
 a {
@@ -594,6 +595,7 @@ input[type="radio"] {
   margin-bottom: 3rem;
   border-radius: 15px;
   color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
 }
 
@@ -622,7 +624,7 @@ input[type="email"] {
 }
 
 .login-btn:hover {
-  background-color: #fff;
+  background-color: #fff700;
   color: #1d2540;
   transition: 0.2s ease-in;
 }
@@ -705,7 +707,6 @@ p {
 }
 
 /* CONTACT */
-
 .contact-container {
   max-width: 480px;
   margin: 0 auto;
@@ -716,6 +717,8 @@ p {
   height: 700px;
   border-radius: 15px;
   border: 1px solid #fff;
+  position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h1,
@@ -749,6 +752,7 @@ textarea {
   margin-bottom: 2rem;
   opacity: 80%;
   border: 1px solid #fff;
+  resize: none;
   width: 100%;
 }
 
@@ -758,11 +762,15 @@ textarea {
   color: #fff;
   border-radius: 8px;
   float: right;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .submit-btn:hover {
   color: #1d2540;
-  background-color: #fff;
+  background-color: #fff700;
   transition: 0.2s ease-in;
 }
 
@@ -770,9 +778,16 @@ textarea {
   width: 20px;
   margin-left: 8px;
 }
+.contact_container #error_displayMessage {
+  margin-bottom: 20px;
+  padding: 0px;
+  background: #c02b30;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
 
 /* CONFIRMATION */
-
 .confirm-container {
   width: 35%;
   margin: 0 auto;
@@ -1072,7 +1087,7 @@ span.copy {
   color: #1d2540;
   padding: 6px 14px 6px 14px;
   cursor: pointer;
-  background-color: #fff700;;
+  background-color: #fff700;
   border: 2px solid #fff700;
   font-weight: bold;
   letter-spacing: 1.2px;
@@ -1084,7 +1099,6 @@ span.copy {
   background-color: #1d2540;
   color: #fff;
 }
-
 
 .grid-container {
   display: grid;

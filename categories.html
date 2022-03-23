@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="This page for login to your existing account" />
-        <meta name="keyword" content="game store, login, buy games, gamehub" />
-        <title>GameHub | Login</title>
+        <meta name="description" content="This is where you can find all the product list" />
+        <meta name="keyword" content="game store, buy games, gamehub" />
+        <title>GameHub | Info</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body class="body">
       <header>
         <a href="index.html"><img class="logo" src="images/gamehub-logo_bg.png" alt="Web-logo" /></a>
-         
+     
             <!-- Hamburger Menu -->
             <input type="checkbox" class="checkbox" hidden id="click">
             <div class="animation">
@@ -41,24 +41,15 @@
           </div>
       </header>
       <main>
-        <div class="login-container">
-          <h1 id="login-heading">Login Here</h1>
-          <form>
-            <input type="email" name="email" placeholder="Email" />
-            <input type="password" name="password" placeholder="Password" />
-            <div class="login-btn-container">
-              <a class="login-btn" href="index.html">Login</a>
-            </div>
-            <div class="login-link">
-              <a class="forgot-link" href="#">Forgot your password?</a>
-            </div>
-            <div class="login-link">
-              <a class="register-link" href="register.html">Create New Account</a>
-            </div>
-            
-          </form>
+        <h1>Product List</h1>
+        <hr>
+        <div class="results">
+          <div class="loader"></div>
+          <div class="genre-container"> 
         </div>
-    
+        
+        </div>
+        <div class=""></div> 
       </main>
       <footer>
         <div class="footer_container">
@@ -72,5 +63,7 @@
         </div>
       </footer>
       <a href="#body" id="topButton" title="Go to Top">Top</a>
+      <script src="/js/product.js" crossorigin="anonymous"></script>
+      <script src="/js/details.js"></script>
     </body>
 </html>

@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="This page for login to your existing account" />
-        <meta name="keyword" content="game store, login, buy games, gamehub" />
-        <title>GameHub | Login</title>
+        <meta name="description" content="This is for registration or creating new account" />
+        <meta name="keyword" content="game store, registration, buy games, gamehub" />
+        <title>GameHub | Info</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body class="body">
       <header>
         <a href="index.html"><img class="logo" src="images/gamehub-logo_bg.png" alt="Web-logo" /></a>
-         
+      
             <!-- Hamburger Menu -->
             <input type="checkbox" class="checkbox" hidden id="click">
             <div class="animation">
@@ -41,24 +41,34 @@
           </div>
       </header>
       <main>
-        <div class="login-container">
-          <h1 id="login-heading">Login Here</h1>
+        <div class="reg-container">
+          <h1>Register</h1>
           <form>
-            <input type="email" name="email" placeholder="Email" />
-            <input type="password" name="password" placeholder="Password" />
-            <div class="login-btn-container">
-              <a class="login-btn" href="index.html">Login</a>
+            <label for="fname">Fullname</label>
+            <input type="text" id="fname" placeholder="fullname">
+
+            <label for="user">Username</label>
+            <input type="text" id="user" placeholder="username">
+
+            <label for="email">EmailAddress</label>
+            <input type="email" id="email" placeholder="Email address">
+
+            <label for="pass">Password</label>
+            <input type="password" id="pass" placeholder="enter password">
+
+            <label for="password">Repeat password</label>
+            <input type="password" id="password" placeholder="repeat password">
+    
+            <p>Gender:
+              <input type="radio" name="gender" value="male"> Male
+              <input type="radio" name="gender" value="female"> Female
+              <input type="radio" name="gender" value="unknown"> Unknown
+            </p>
+            <div class="reg-btn-container">
+              <a id="reg-btn" href="login.html">Register</a>
             </div>
-            <div class="login-link">
-              <a class="forgot-link" href="#">Forgot your password?</a>
-            </div>
-            <div class="login-link">
-              <a class="register-link" href="register.html">Create New Account</a>
-            </div>
-            
           </form>
         </div>
-    
       </main>
       <footer>
         <div class="footer_container">

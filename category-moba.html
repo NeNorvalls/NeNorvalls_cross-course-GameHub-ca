@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="This is for registration or creating new account" />
-        <meta name="keyword" content="game store, registration, buy games, gamehub" />
+        <meta name="description" content="This is where you can find all the product list" />
+        <meta name="keyword" content="game store, buy games, gamehub" />
         <title>GameHub | Info</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="css/product.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body id="body">
       <header>
         <a href="index.html"><img class="logo" src="images/gamehub-logo_bg.png" alt="Web-logo" /></a>
-      
+     
             <!-- Hamburger Menu -->
             <input type="checkbox" class="checkbox" hidden id="click">
             <div class="animation">
@@ -40,36 +41,41 @@
             </div>
           </div>
       </header>
-      <main>
-        <div class="reg-container">
-          <h1>Register</h1>
-          <form>
-            <label for="fname">Fullname</label>
-            <input type="text" id="fname" placeholder="fullname">
+      <div class="home-container">
+        <main>
+          <!-- mmorpg, shooter, pvp, mmofps anime battle royale MOBA MMOFPS Open World MMORTS -->
+          <h1>Product List</h1>
 
-            <label for="user">Username</label>
-            <input type="text" id="user" placeholder="username">
+         <!-- Dropdown Category Filter -->
+         <label class="dropdown">
+          <div class="dd-button">
+            Category
+          </div>
+          <input type="checkbox" class="dd-input" id="dropdown">
+          <ul class="dd-menu">
+            <a href="product.html"><li class="filter-btn" id="all">ALL GAMES</li></a>
+                <a class="filter-link" href="mmorpg.html"><li class="filter-btn" id="all">MMORPG</li></a>
+                <a class="filter-link" href="shooter.html"><li class="filter-btn" id="all">SHOOTER</li></a>
+                <a class="filter-link" href="strategy.html"><li class="filter-btn" id="all">STRATEGY</li></a>
+                <a class="filter-link" href="moba.html"><li class="filter-btn" id="all">MOBA</li></a>
+                <a class="filter-link" href="card-games.html"><li class="filter-btn" id="all">CARD GAMES</li></a>
+                <a class="filter-link" href="racing.html"><li class="filter-btn" id="all">RACING</li></a>
+                <a class="filter-link" href="sports.html"><li class="filter-btn" id="all">SPORTS</li></a>
+                <a class="filter-link" href="social.html"><li class="filter-btn" id="all">SOCIAL</li></a>
+                <a class="filter-link" href="fighting.html"><li class="filter-btn" id="all">FIGHTING</li></a>
+                <li class="divider"></li>
+          </ul>
+        </label>
+          <hr>
+          <!-- API results -->
+          <div class="results" id="games">
+            <div class="loader"></div>
+            <div class="genre-container"> 
+          </div>
+        
+        </main>
 
-            <label for="email">EmailAddress</label>
-            <input type="email" id="email" placeholder="Email address">
-
-            <label for="pass">Password</label>
-            <input type="password" id="pass" placeholder="enter password">
-
-            <label for="password">Repeat password</label>
-            <input type="password" id="password" placeholder="repeat password">
-    
-            <p>Gender:
-              <input type="radio" name="gender" value="male"> Male
-              <input type="radio" name="gender" value="female"> Female
-              <input type="radio" name="gender" value="unknown"> Unknown
-            </p>
-            <div class="reg-btn-container">
-              <a id="reg-btn" href="login.html">Register</a>
-            </div>
-          </form>
-        </div>
-      </main>
+      </div>
       <footer>
         <div class="footer_container">
           <span class="footer-links"> <a href="#">FAQ</a> | <a href="#">Privacy policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Cookies</a></span>
@@ -82,5 +88,7 @@
         </div>
       </footer>
       <a href="#body" id="topButton" title="Go to Top">Top</a>
+      <script src="/js/moba.js" crossorigin="anonymous"></script>
+      <script src="/js/details.js"></script>
     </body>
 </html>

@@ -50,7 +50,6 @@ function createHTML(game) {
                                     <p class="game-info">${game.description}</p>
                                     <p><span class="game-info"Genre: ${game.genre}</span></p>
                                     <p><span class="game-info">Released: ${game.release_date}</span></p>
-                                    <button class="card-cart-btn">Add to cart</button>
                                 </div>
 
                                `

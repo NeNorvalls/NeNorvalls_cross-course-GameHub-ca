@@ -9,7 +9,7 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
-    <body class="body">
+    <body id="body">
       <header>
         <a href="index.html"><img class="logo" src="images/gamehub-logo_bg.png" alt="Web-logo" /></a>
         
@@ -41,35 +41,30 @@
           </div>
       </header>
       <main>
-  
         <div class="contact-container">
           <h1>Contact</h1>
-          <form method="POST"action="">
+          <form method="POST">
             <div class="form-wrapper">
               <div>
-                <label for="name"><b>Full Name</b></label>
+                <label for="name"><b>Username</b></label>
                 <input type="text" id="name" name="name">
-                <div id="error_displayMessage"></div>
+                <div class="form_error" id="nameError">Name must be atleast 10 characters</div>
                 
                 <label for="email"><b>Email</b></label>
                 <input type="email" id="email" name="Email">
-                <div id="error_displayMessage"></div>
-
-                <div class="signup-container">
-                  <label for="email-updates"><b>Sign up for email updates.</b></label>
-                  <input type="checkbox" id="email-updates" name="email-updates" />
-                  <div id="error_displayMessage"></div>
-                </div>
+                <div class="form_error" id="emailError">Email is required</div>
+               
                 <p class="message">Your Message:</p>
                 <textarea name="msg">Enter text here...</textarea>   
-                <div id="error_displayMessage"></div>
+                <div class="form_error" id="subjectError">Subject must have atleast 10 characters</div>
                 
                 <a class="submit-btn" href="login.html">Submit </a>
+              
               </div>
             </div>
           </form>
         </div>
-
+    
       </main>
       <footer>
         <div class="footer_container">

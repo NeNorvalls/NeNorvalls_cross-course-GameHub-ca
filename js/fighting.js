@@ -1,11 +1,11 @@
 const gamesContainer = document.querySelector(".results");
 
-const mmorpg = "https://mmo-games.p.rapidapi.com/games";
+const fighting = "https://mmo-games.p.rapidapi.com/games?category=fighting";
 
 
 const corsFix = "https://noroffcors.herokuapp.com/"
 
-const corsUrl = corsFix + mmorpg;
+const corsUrl = corsFix + fighting;
 
 async function fetchGames() {
 
@@ -27,19 +27,16 @@ async function fetchGames() {
 
 		for (let i = 0; i < game.length; i++) {
 
-			if (game.length === 100) {
+			if (i === 72) {
 				break;
-				
 			}
-
 			gamesContainer.innerHTML += `<a href="details.html?id=${game[i].id}" class="card">
 										 	<div class="grid-container">
 											 	<img class="game-thumb" src="${game[i].thumbnail}"/>
 											</div>
 											<div class="game-details">
 												<h4 class="game-title">${game[i].title}</h4>
-												<p class="game-info">${game[i].genre}</p>
-												<p class="game-info">${game[i].platform}</p>
+												<p class="game-genre">${game[i].genre}</p>
 												<button class="card-cart-btn">Add to cart</button>
 												<p><span class="game-price">$25</span></p>
 											</div>

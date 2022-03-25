@@ -255,8 +255,8 @@ p {
 
 .index-btn,
 .product-btn {
-  background-color: #334c87;
-  color: #fff;
+  background-color: #fff700;
+  color: #1d2540;
   font-weight: bold;
   border: 1px solid#fff;
   border-radius: 10px;
@@ -277,9 +277,9 @@ p {
 
 .index-btn:hover,
 .product-btn:hover {
-  background: #fff700;
+  background: #1d2540;
   transition: 0.2s;
-  color: #1d2540;
+  color: #fff;
 }
 
 a {
@@ -423,7 +423,7 @@ p > a {
 }
 
 .price-btn:hover {
-  background-color: #fff;
+  background-color: #fff700;
   color: #1d2540;
   transition: 0.2s ease-in;
 }
@@ -509,8 +509,8 @@ input[type="radio"] {
 }
 
 #reg-btn:hover {
-  background-color: #334c87;
-  color: #fff;
+  background-color: #fff700;
+  color: #1d2540;
   transition: 0.2s ease-in-out;
 }
 
@@ -595,7 +595,6 @@ input[type="radio"] {
   margin-bottom: 3rem;
   border-radius: 15px;
   color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
 }
 
@@ -690,7 +689,7 @@ input[type="email"] {
   color: #fff700;
   font-size: 18px;
   margin-top: -4rem;
-  margin-right: -8.5rem;
+  margin-right: -3.5rem;
 }
 
 h2,
@@ -707,6 +706,7 @@ p {
 }
 
 /* CONTACT */
+
 .contact-container {
   max-width: 480px;
   margin: 0 auto;
@@ -717,8 +717,6 @@ p {
   height: 700px;
   border-radius: 15px;
   border: 1px solid #fff;
-  position: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h1,
@@ -752,7 +750,6 @@ textarea {
   margin-bottom: 2rem;
   opacity: 80%;
   border: 1px solid #fff;
-  resize: none;
   width: 100%;
 }
 
@@ -762,10 +759,6 @@ textarea {
   color: #fff;
   border-radius: 8px;
   float: right;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .submit-btn:hover {
@@ -778,16 +771,9 @@ textarea {
   width: 20px;
   margin-left: 8px;
 }
-.contact_container #error_displayMessage {
-  margin-bottom: 20px;
-  padding: 0px;
-  background: #c02b30;
-  text-align: center;
-  font-size: 14px;
-  transition: all 0.5s ease;
-}
 
 /* CONFIRMATION */
+
 .confirm-container {
   width: 35%;
   margin: 0 auto;
@@ -854,7 +840,6 @@ h2,
 label,
 p {
   color: #fff;
-  opacity: 90%;
 }
 
 #cvv,
@@ -893,7 +878,7 @@ p {
 }
 
 .contact-btn:hover {
-  background-color: #fff;
+  background-color: #fff700;
   color: #1d2540;
   transition: 0.2s ease-in;
 }
@@ -1071,7 +1056,7 @@ span.copy {
   font-weight: bold;
 }
 
-.game-genre {
+.game-info {
   font-size: 14px;
   text-align: left;
   margin-left: 1rem;
@@ -1079,9 +1064,10 @@ span.copy {
   color: lightgray;
 }
 
-.card-cart-btn {
+.card-get-btn {
   border-radius: 10px;
   float: right;
+  margin-top: -2rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
   color: #1d2540;
@@ -1095,7 +1081,7 @@ span.copy {
   z-index: 999;
 }
 
-.card-cart-btn:hover {
+.card-get-btn:hover {
   background-color: #1d2540;
   color: #fff;
 }
@@ -1131,7 +1117,7 @@ span.copy {
   grid-template-columns: repeat(4, 1fr);
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   .results {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1228,4 +1214,135 @@ span.copy {
 
 #topButton:hover {
   background-color: #fff700;
+}
+
+.fa-solid fa-cart-plus {
+  color: #fff;
+  background: #fff;
+}
+
+.wrapper .filter-btns {
+  margin: 0 auto;
+}
+
+.filter-btn {
+  background: none;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px 30px;
+  font-size: 16px;
+  color: #d3d3d3;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  min-width: 100px;
+  text-align: center;
+}
+
+.filter-btn::after {
+  text-align: center;
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #fff700;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-btn:hover {
+  color: #fff700;
+}
+
+.filter-btn:hover::after {
+  width: 100%;
+}
+
+.active-btn {
+  color: #555;
+}
+
+/* Dropdown Category Filter */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dd-button {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+  background-color: #334c87;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+}
+
+.dd-button:hover {
+  background-color: #1d2540;
+}
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 2px 0 0 0;
+  padding: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  background-color: #334c87;
+  list-style-type: none;
+  text-align: center;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+}
+
+.dd-input:checked + .dd-menu {
+  display: block;
+}
+
+.dd-menu li {
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #1d2540;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider {
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
 }

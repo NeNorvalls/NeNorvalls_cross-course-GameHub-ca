@@ -2,7 +2,7 @@ const gamesContainer = document.querySelector(".results");
 
 // const  url = "https://free-to-play-games-database.p.rapidapi.com/api/games/?rapidapi-key=e571381396mshbf0c399aa256715p147efcjsn84b2bc11dfa5";
 // const  url = "https://rawg-video-games-database.p.rapidapi.com/games/?rapidapi-key=7892c1736b184f4489e3262b28587ce6";
-const url = "https://mmo-games.p.rapidapi.com/games";
+const url = "https://mmo-games.p.rapidapi.com/games?sort-by=popularity";
 
 const corsFix = "https://noroffcors.herokuapp.com/"
 
@@ -37,8 +37,9 @@ async function fetchGames() {
 											</div>
 											<div class="game-details">
 												<h4 class="game-title">${game[i].title}</h4>
-												<p class="game-genre">${game[i].genre}</p>
-												<button class="card-cart-btn">Add to cart</button>
+												<p class="game-info">${game[i].genre}</p>
+												<p class="game-info">${game[i].platform}</p>
+												<button class="card-get-btn">Get</button>
 												<p><span class="game-price">$25</span></p>
 											</div>
 										</a>`;

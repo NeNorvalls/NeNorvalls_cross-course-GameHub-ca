@@ -27,7 +27,7 @@ async function fetchGames() {
 
 		for (let i = 0; i < game.length; i++) {
 
-			if (game.length === 100) {
+			if (game.length === 50) {
 				break;
 				
 			}
@@ -40,7 +40,7 @@ async function fetchGames() {
 												<h4 class="game-title">${game[i].title}</h4>
 												<p class="game-info">${game[i].genre}</p>
 												<p class="game-info">${game[i].platform}</p>
-												<button class="card-cart-btn">Add to cart</button>
+												<button class="card-get-btn">Get</button>
 												<p><span class="game-price">$25</span></p>
 											</div>
 										</a>`;

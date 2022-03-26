@@ -1,35 +1,82 @@
-function validateForm() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-  var error_message = document.getElementById("error_message");
-  error_message.style.padding = "10px";
-  var text;
+// Get form data
+const successForm = document.querySelector(".successForm");
+const contactForm = document.querySelector("#contactForm");
 
-  if (name.length < 1) {
-    text = "Please enter valid name";
-    error_message.innerHTML = text;
-    return false;
+const fullname = document.querySelector("#fullname");
+const fullnameError = document.querySelector("#fullnameError");
+
+const email = document.querySelector("#email");
+const emailError = document.querySelector("#emailError");
+
+const address = document.querySelector("#address");
+const addressError = document.querySelector("#addressError");
+
+const message = document.querySelector("#message");
+const messageError = document.querySelector("#messageError");
+
+let successMsg = false;
+successForm.style.visibility="hidden";
+
+function validateForm(event) {
+  event.preventDefault();
+
+  const validatedName = checkLength(fullname.value, 2);
+  const validatedAddress = checkLength(address.value, 4);
+  const validatedEmail = validateEmail(email.value);
+  const validatedMessage = checkLength(message.value, 10);
+
+
+  if (fullname) {
+    fullnameError.style.display = "none";
+  } else {
+    fullnameError.style.display = "block";
   }
 
-  if (address.length < 25) {
-    text = "Please enter valid address";
-    error_message.innerHTML = text;
-    return false;
+  if (email) {
+    emailError.style.display = "none";
+  } else {
+    emailError.style.display = "block";
   }
 
-  if (email.indexOf("@") == -1 || email.length < 0) {
-    text = "Please enter valid email";
-    error_message.innerHTML = text;
-    return false;
+  if (address) {
+    addressError.style.display = "none";
+  } else {
+    addressError.style.display = "block";
   }
 
-  if (subject.length < 10) {
-    text = "Please enter valid subject";
-    error_message.innerHTML = text;
-    return false;
+  if (message) {
+    messageError.style.display = "none";
+  } else {
+    messageError.style.display = "block";
   }
 
-  alert("Form submitted successfully!");
-  return true;
+  if (validatedName && validatedEmail && validatedAddress && validatedMessage) {
+    successMsg = true;
+  }
+
+  if(successMsg) {
+    successForm.style.visibility="visible";
+    successForm.innerHTML = fullname.value + " " + "Form was successfully validated";
+  } else {
+    successForm.style.visibility="hidden";
+    successForm.innerHTML = "";
+  }
+}
+
+
+
+contactForm.addEventListener("submit", validateForm);
+
+function checkLength(value, len) {
+  if(value.trim().length > len) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function validateEmail(email) {
+  const regEx = /\S+@\S+\.\S+/;
+  const patternMatches = regEx.test(email);
+  return patternMatches;
 }

@@ -37,7 +37,7 @@ async function fetchGames() {
 											<div class="game-details">
 												<h4 class="game-title">${game[i].title}</h4>
 												<p class="game-genre">${game[i].genre}</p>
-												<button class="card-cart-btn">Add to cart</button>
+												<button class="card-get-btn">Get</button>
 												<p><span class="game-price">$25</span></p>
 											</div>
 										</a>`;

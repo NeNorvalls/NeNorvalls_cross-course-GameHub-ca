@@ -11,9 +11,7 @@ main {
   min-height: 100vh;
 }
 
-input {
-  width: 100%;
-}
+
 /* Hamburger */
 
 .animation {
@@ -805,6 +803,7 @@ textarea {
   margin-bottom: 20px;
   border: 1px solid #fff;
   border-radius: 3px;
+  margin: 0 auto;
 }
 
 input[type="text"],
@@ -930,8 +929,7 @@ p {
 }
 
 /* CART */
-
-/* .cart-container {
+ .cart-container {
   margin: 0 auto;
   padding: 30px;
   margin-top: 100px;
@@ -978,7 +976,7 @@ p {
 .cart-checkout {
   color: #fff;
   text-decoration: underline;
-} */
+}
 
 /* FOOTER */
 
@@ -1136,7 +1134,6 @@ span.copy {
 }
 
 .error {
-  border: 1px solid rgb(187, 1, 1);
   color: rgb(187, 1, 1);
   background: lightgrey;
   padding: 1em 0;
@@ -1345,4 +1342,91 @@ span.copy {
 .dd-menu li.divider {
   padding: 0;
   border-bottom: 1px solid #cccccc;
+}
+
+/* CONTACT */
+.successForm {
+  color: #fff;
+  width: 15vw;
+  margin: 30px auto;
+  text-align: center;
+}
+#contactForm {
+  max-width: 550px;
+  width: 90%;
+  background: #334c87;
+  padding: 30px;
+  margin: 14vh auto 0 auto;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 10vh;
+}
+
+#contactForm h3, h4 {
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+#contactForm h4 {
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+}
+
+#contactForm label {
+  display: block;
+  margin: 15px 0;
+}
+
+#contactForm input, textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #334c87;
+}
+
+#contactForm input[type="text"]:focus, textarea:focus {
+  border-bottom: 1px solid #fff700;
+}
+
+textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #fff700;
+}
+
+.center-form {
+  text-align: center;
+}
+
+#contactForm input[type="submit"] {
+  margin-top: 25px;
+  margin-bottom: 0;
+  width: 90%;
+  max-width: 200px;
+  background: #1d2540;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+.error {
+  color: red;
+}
+
+.error-border {
+  border-bottom: 1px solid red;
+}
+
+#success {
+  color: #28a745;
 }

@@ -46,6 +46,9 @@ function createHTML(game) {
                                 <div class="details-container">
                                     <img class="game-details-thumb" src="${game.thumbnail}" alt="${game.title}">
                                 </div>
+                                <div class="cart-btn-wrapper">
+                                    <a href="cart" class="cart-btn product-btn">Add to cart $25</a>
+                                </div>
                                 <div class="game-info-container">
                                     <p class="game-info">${game.description}</p>
                                     <p><span class="game-info"Genre: ${game.genre}</span></p>

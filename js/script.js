@@ -40,7 +40,7 @@ async function fetchGames() {
 												<p class="game-info">${game[i].genre}</p>
 												<p class="game-info">${game[i].platform}</p>
 												<button class="card-get-btn">Get</button>
-												<p><span class="game-price">$25</span></p>
+												<p><span class="game-price"></span></p>
 											</div>
 										</a>`;
 		};

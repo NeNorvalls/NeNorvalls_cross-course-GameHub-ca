@@ -264,6 +264,17 @@ p {
   text-transform: uppercase;
 }
 
+.cart-btn-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 200px;
+}
+
+.cart-btn {
+  margin: 0 auto;
+}
+
 /* btn responsiveness */
 @media screen and (max-width: 420px) {
   .index-btn,

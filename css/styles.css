@@ -1140,7 +1140,7 @@ span.copy {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .results {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1433,7 +1433,6 @@ textarea::-webkit-scrollbar {
 /* Cart */
 #cart {
   max-width: 550px;
-  width: 90%;
   background: #334c87;
   padding: 30px;
   margin: 14vh auto 0 auto;

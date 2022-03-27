@@ -42,16 +42,16 @@
                         </div>
        </header>
            <main>
-               <div class="cart-container">
+               <div class="cart-container" id="cart">
                    <h1> Shopping Cart</h1>
-                       <form>
-                           <label>Item: <input type="text" placeholder="Cyberpunk" name="name"></label>
-                           <label>Quantity: <input type="text" placeholder="1" name="data"></label>
+                       <form class="cart-cont">
+                           <label>Item: <input type="text" placeholder="Game title" name="name"></label>
+                           <label>Quantity:<input type="number" id="quantity" name="quantity" min="1" max="100"></label>
                            <label><input class="cart-btn" type="button" value="clear">
                            * Delete all items</label>
           
                    <div class="cart-checkout-container">
-                       <p>Continue to checkout  <a class="cart-checkout" href="checkout.html"></a> </p>
+                       <a href="checkout.html" class="cart-checkout"><p>Continue to checkout</p></a>
                    </div>
                    <div class="cancel-btn-container">
                        <a class="cancel-btn" href="product.html">Cancel</a>

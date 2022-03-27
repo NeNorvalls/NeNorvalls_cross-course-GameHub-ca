@@ -1,7 +1,5 @@
 const gamesContainer = document.querySelector(".results");
 
-// const  url = "https://free-to-play-games-database.p.rapidapi.com/api/games/?rapidapi-key=e571381396mshbf0c399aa256715p147efcjsn84b2bc11dfa5";
-// const  url = "https://rawg-video-games-database.p.rapidapi.com/games/?rapidapi-key=7892c1736b184f4489e3262b28587ce6";
 const url = "https://mmo-games.p.rapidapi.com/games?sort-by=popularity";
 
 const corsFix = "https://noroffcors.herokuapp.com/"

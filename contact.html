@@ -42,33 +42,29 @@
           </div>
       </header>
       <main>
-        <div class="successForm"></div>
-        <div>
-          <form id="contactForm" onsubmit="validateForm()">
-            <h3>Contact Us</h3>
-              <h4>Contact us today, and get reply within 24 hours!</h4>
+        <div class="contact-wrapper">
+          
+        <form action="#" id="contactForm" onsubmit="return validateForm();">
+          <h3>Contact us</h3>
+          <h4>Contact us today and get reply within 24 hours!</h4>
+          <div id="errorMessage"></div>
+          <div class="input-field">
+            <input type="text" id="name" placeholder="Full Name">
+          </div>
+          <div class="input-field">
+            <input type="text" id="email" placeholder="Email Address">
+          </div>
+          <div class="input-field">
+            <input type="text" id="address" placeholder="Address">
+          </div>
+          <div class="input-field">
+            <textarea placeholder="Message" id="message"></textarea>
+          </div>
+          <div>
+            <input type="submit">
+          </div>
+        </form>
 
-              <label for="fullname">Full Name:</label>
-              <input type="text" id="fullname" placeholder="Your full name">
-              <div class="error" id="fullnameError">Please enter your full name.</div>
-
-              <label for="email">Email:</label>
-              <input type="text" id="email" placeholder="Your email">
-              <div class="error" id="emailError">Please enter a valid email.</div>
-
-              <label for="address">Address:</label>
-              <input type="text" id="address" placeholder="Your address">
-              <div class="error" id="adressError">Please enter your address.</div>
-
-              <label for="fullname">Message:</label>
-              <textarea id="message" placeholder="Your message"></textarea>
-              <div class="error" id="messageError">Please enter a message.</div>
-
-              <div class="center-form">
-                <input id="submit-btn" type="submit" value="Send Message">
-                <p id="successMsg"></p>
-              </div>
-          </form>
         </div>
     
       </main>
@@ -87,6 +83,6 @@
       </footer>
       <a href="#body" id="topButton" title="Go to Top">Top</a>
       <script src="/js/script.js" crossorigin="anonymous"></script>
-      <script src="/js/contact.js" crossorigin="anonymous"></script>
+      <script src="/js/contact.js"></script>
     </body>
 </html>

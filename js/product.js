@@ -27,7 +27,7 @@ async function fetchGames() {
 
 		for (let i = 0; i < game.length; i++) {
 
-			if (game.length === 50) {
+			if (i === 50) {
 				break;
 				
 			}

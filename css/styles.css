@@ -1050,6 +1050,7 @@ span.copy {
   text-align: left;
   margin-left: 1rem;
   margin-top: 10px;
+  margin-bottom: 20px;
   color: #fff;
   font-weight: bold;
 }
@@ -1135,9 +1136,7 @@ span.copy {
 
 .error {
   color: rgb(187, 1, 1);
-  background: lightgrey;
   padding: 1em 0;
-  margin-top: 2em;
 }
 
 .loader {
@@ -1345,12 +1344,6 @@ span.copy {
 }
 
 /* CONTACT */
-.successForm {
-  color: #fff;
-  width: 15vw;
-  margin: 30px auto;
-  text-align: center;
-}
 #contactForm {
   max-width: 550px;
   width: 90%;
@@ -1398,10 +1391,6 @@ textarea::-webkit-scrollbar {
   width: 4px;
 }
 
-textarea::-webkit-scrollbar-thumb {
-  background-color: #fff700;
-}
-
 .center-form {
   text-align: center;
 }
@@ -1418,15 +1407,14 @@ textarea::-webkit-scrollbar-thumb {
   border-radius: 3px;
 }
 
-
-.error {
-  color: red;
+#errorMessage {
+  display: none;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #b00000;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
 }
 
-.error-border {
-  border-bottom: 1px solid red;
-}
-
-#success {
-  color: #28a745;
-}
